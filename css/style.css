@@ -1,0 +1,284 @@
+:root {
+  --color-primary: #fe52c0;
+  --color-secondary: #00252e;
+  --color-body: #828b94;
+  --color-hero: #edfbfe;
+}
+
+/*typography*/
+
+html {
+  font-size: 62.5%;
+  /* 62.5% of 16px = 10px*/
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "open sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-height: 100%;
+}
+
+h2,
+h3 {
+  font-family: "poppins";
+  font-weight: 600;
+}
+h1 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+/* links*/
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* buttons*/
+.btn {
+  padding: 1rem 5rem;
+  border-radius: 30px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  margin: 3rem 0 ;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: #f725ab;
+}
+
+.btn--outline {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.btn--outline:hover {
+  background: #ddd6d6;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+/* grids*/
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .block__header {
+    grid-area: 1;
+    align-self: center;
+    margin-right: 1rem;
+  }
+}
+
+/* navigation*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin: auto;
+  max-width: 900px;
+}
+
+.logo {
+  width: 10rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+/* blocks*/
+
+.block {
+  padding: 6rem 2rem;
+  margin: 6rem 2rem;
+  border: 4px solid #f8f8f8;
+  box-shadow: 0 0 5px 0 #f8f8f8;
+  border-radius: 15px;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin: 3rem auto;
+  }
+}
+
+.footer {
+  background: var(--color-secondary);
+  color: #f5ffff;
+  margin-top: 20rem;
+  
+}
+
+.hero {
+  background: url(../images/bg-hero-mobile.svg), var(--color-hero);
+  padding: 6rem 2rem 0;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.call-out-heading {
+  text-transform: capitalize;
+  margin: auto;
+}
+
+.call--out {
+  background: #fff;
+  border-radius: 15px;
+  border: 4px solid #f8f8f8;
+  box-shadow: 0 0 5px 0 #f8f8f8;
+  color: #000;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: -8rem;
+  max-width: 600px;
+  z-index: 22222;
+  height: 150px;
+}
+
+/* icons*/
+
+.icon-logo {
+  width: 6rem;
+  fill: #fff;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.flex {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  height: 1rem;
+  width: auto;
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+.icon {
+  width: 2rem;
+}
+
+.logo-paragraphy {
+  margin-left: 1rem;
+}
+
+
+.media {
+  width: 1.4rem;
+  height: 1rem;
+  fill: #fff;
+}
+
+.media-circle {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  justify-content: center;
+  height: 1.9rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__media {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.copy-right {
+  font-size: 1rem;
+  margin: 2rem  0 4rem ;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    max-width: 900px;
+    justify-items: flex-start;
+    align-items: center;
+  }
+
+  .copy-right {
+    margin-top: 10rem;
+  }
+
+  .footer__media {
+    margin-top: 6rem;
+  }
+}
+
+.footer .container {
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+/* list*/
+.list li{
+  list-style: none;
+  padding-left: 2rem;
+  margin: 1rem 0 2rem;
+}
+
+.list a {
+  color: #fff;
+}
+
+.list-one {
+  align-self: center;
+  justify-self: end;
+}
