@@ -112,6 +112,7 @@ a {
 
 .nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
   margin: auto;
@@ -136,6 +137,11 @@ a {
 
 .block__header {
   text-align: center;
+}
+
+.flowing{
+  text-align: center;
+  align-self: center;
 }
 
 .container {
@@ -167,9 +173,15 @@ img {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .call-out-heading{
+    font-size: inherit;
+  }
+}
+
 .call-out-heading {
   text-transform: capitalize;
-  margin: auto;
+  font-size: 1.6rem;
 }
 
 .call--out {
@@ -179,6 +191,7 @@ img {
   box-shadow: 0 0 5px 0 #f8f8f8;
   color: #000;
   margin: auto;
+  align-items: center;
   justify-content: center;
   display: flex;
   position: relative;
@@ -187,6 +200,7 @@ img {
   z-index: 22222;
   height: 150px;
 }
+
 
 /* icons*/
 
